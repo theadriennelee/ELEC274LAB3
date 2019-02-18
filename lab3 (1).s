@@ -130,10 +130,10 @@ PrintDecimal99:
 	add 	r2, r3, r0 #add q and 0 and store into r2
 	call	PrintChar #print character found in r2
 	add 	r2, r4, r0 #add r and 0
-	stw 	r2, 0(sp)
-	stw		r3, 4(sp)
-	stw		r4, 8(sp)
-	stw		r5, 12(sp)
+	ldw 	r2, 0(sp)
+	ldw		r3, 4(sp)
+	ldw		r4, 8(sp)
+	ldw		r5, 12(sp)
 	addi 	sp, sp, 16
 	
 #write the subroutine
